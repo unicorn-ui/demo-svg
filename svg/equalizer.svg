@@ -1,0 +1,12 @@
+<svg id="equalizer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<g>
+	<g id="vertical-lines">
+		<path fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" d="M14.2,62H6.9V2h7.3V62z"/>
+		<path fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" d="M35.1,62h-7.3V2h7.3V62z"/>
+		<path fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" d="M57.1,62h-7.3V2h7.3V62z"/>
+	</g>
+	<path id="level-left" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" d="M19.1,55H2v-6h17.1V55z"/>
+	<path id="level-middle" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" d="M40,17H22.8v-6H40V17z"/>
+	<path id="level-right" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" d="M62,37H44.9v-6H62V37z"/>
+</g>
+</svg>

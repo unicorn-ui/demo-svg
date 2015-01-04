@@ -1,0 +1,8 @@
+<svg id="maximize" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<g>
+	<path id="arrow-right-up" fill="#FFFFFF" d="M34.5,26.6l16.3-16.3l-2.3-2.3l10.3-2.8L56,15.6l-1.9-1.9L37.9,30L34.5,26.6z"/>
+	<path id="arrow-left-up" fill="#FFFFFF" d="M26.6,29.5L10.3,13.2l-2.3,2.3L5.3,5.2L15.6,8l-1.9,1.9L30,26.1L26.6,29.5z"/>
+	<path id="arrow-left-down" fill="#FFFFFF" d="M29.5,37.4L13.2,53.7l2.3,2.3L5.2,58.7L8,48.4l1.9,1.9L26.1,34L29.5,37.4z"/>
+	<path id="arrow-right-down" fill="#FFFFFF" d="M37.4,34.5l16.3,16.3l2.3-2.3l2.8,10.3L48.4,56l1.9-1.9L34,37.9L37.4,34.5z"/>
+</g>
+</svg>

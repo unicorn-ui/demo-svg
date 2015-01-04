@@ -1,0 +1,10 @@
+<svg version="1.1" id="lock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<circle id="lock-circle" cx="32.7" cy="42.4" r="6"/>
+	<path id="lock-handle" d="M47.5,21.5v-6c0-8.3-6.6-14.9-14.9-14.9S17.8,7.3,17.8,15.5h0.1h5.5h0.1c0-5.1,4.2-9.3,9.3-9.3
+		s9.3,4.2,9.3,9.3v6"/>
+	<path id="lock-body" d="M50.5,21.5h-2.9h-5.7H14.8c-3.3,0-6,2.6-6,6v29.9c0,3.3,2.6,6,6,6h35.8c3.3,0,6-2.6,6-6V27.5
+		C56.5,24.1,53.9,21.5,50.5,21.5z M50.5,57.3H14.8V27.5h35.8L50.5,57.3L50.5,57.3z"/>
+</g>
+</svg>

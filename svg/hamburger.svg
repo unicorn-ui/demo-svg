@@ -1,0 +1,7 @@
+<svg id="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<g>
+	<path id="rect-top" fill="#FFFFFF" d="M58.7,22.7H5.3v-5.3h53.3V22.7z"/>
+	<path id="rect-middle" fill="#FFFFFF" d="M58.7,34.7H5.3v-5.3h53.3V34.7z"/>
+	<path id="rect-bottom" fill="#FFFFFF" d="M58.7,46.7H5.3v-5.3h53.3V46.7z"/>
+</g>
+</svg>

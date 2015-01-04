@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+<g id="clouds">
+	<path fill="#FFFFFF" d="M20.8,64c-3.9,0-12.8-6.3-11-15.1C11.6,39.2,22.3,38,22.3,38s-0.9-4.7,2.7-7.5c5.4-4.1,11.2,0.4,11.2,0.4
+		s6.5-13,21.7-10.6s14.1,17.3,14.1,17.3s15.7,4,11.4,17.8c-1.8,5.8-4.8,8.5-8.5,8.7"/>
+</g>
+<g id="rain">
+	<g id="right-rain">
+		<rect x="60.7" y="62.1" fill="#00FFFF" width="1.6" height="2.3"/>
+		<rect x="60.7" y="74.1" fill="#00FFFF" width="1.6" height="4.6"/>
+		<rect x="60.7" y="81.6" fill="#00FFFF" width="1.6" height="2.7"/>
+		<rect x="60.7" y="88.9" fill="#00FFFF" width="1.6" height="3.4"/>
+		<rect x="60.7" y="67.6" fill="#00FFFF" width="1.6" height="3.4"/>
+	</g>
+	<g id="middle-rain">
+		<rect x="46" y="66.4" fill="#00FFFF" width="1.6" height="4.4"/>
+		<rect x="46" y="77.1" fill="#00FFFF" width="1.6" height="1.5"/>
+		<rect x="46" y="80.7" fill="#00FFFF" width="1.6" height="4"/>
+		<rect x="46" y="91" fill="#00FFFF" width="1.6" height="4"/>
+	</g>
+	<g id="left-rain">
+		<rect x="30.1" y="90.3" fill="#00FFFF" width="1.6" height="4.6"/>
+		<rect x="30.1" y="66.9" fill="#00FFFF" width="1.6" height="2.1"/>
+		<rect x="30.1" y="70.1" fill="#00FFFF" width="1.6" height="4.4"/>
+		<rect x="30.1" y="78.1" fill="#00FFFF" width="1.6" height="1.5"/>
+		<rect x="30.1" y="83" fill="#00FFFF" width="1.6" height="4"/>
+	</g>
+</g>
+<g id="thunder">
+	<path id="middle-bolt" fill="#FCEE21" d="M46.6,75h-8.8l13.6-19.8L42.8,72h9.8L36.9,94.8L46.6,75z"/>
+	<path id="left-bolt" fill="#FCEE21" d="M20.3,77h-9.2l11.8-14.7L16.4,75h10L11.9,92.3L20.3,77z"/>
+	<path id="right-bolt" fill="#FCEE21" d="M70.5,79h-6.1l11-11.3l-6,9.3h6.8l-11,11.1L70.5,79z"/>
+</g>
+</svg>

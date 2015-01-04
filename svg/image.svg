@@ -1,0 +1,6 @@
+<svg id="image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<g>
+	<path id="mountains" d="M63,32.3v20.1v0.4V62H1v-9.6v0l20.2-22l9.2,8.5L49,17.7L63,32.3z"/>
+	<path id="sun" d="M20.1,13.6c0,5-4,9-9,9s-9-4-9-9s4-9,9-9S20.1,8.7,20.1,13.6z"/>
+</g>
+</svg>
