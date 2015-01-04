@@ -31,6 +31,7 @@ p {color: #E4637C;}
 .fa-chevron-left {margin-right: 8px; }
 .fa-chevron-right {margin-left: 8px; }
 
+.level {padding: 1em 1em 2em;}
 .level-beginner {
   background: #1baee1; /* Old browsers */
 	background: -moz-linear-gradient(-45deg, #1baee1 0%, #1A9ED8 100%); /* FF3.6+ */
@@ -137,5 +138,19 @@ p {color: #E4637C;}
 	margin-left: .75em;
 	margin-right: .75em;
 	margin-bottom: 1.5em;
+}
+
+/* ICOMOON */
+[class^="iconmoon-"], [class*=" iconmoon-"] {
+	display: inline-block;
+	color: white;
+	fill: currentColor;
+}
+.icomoon-arrow-right3 {
+	width: 16px;
+	height: 16px;
+	fill: white;
+	margin-bottom: -2px;
+	margin-left: 4px;
 }
 
