@@ -370,7 +370,9 @@ var initPlugAnimation = function() {
 		svg.append(group);
 
 		$button.on(clickEvent, function(e) {
-			console.log("TODO .. animate");
+			group.stop().animate({transform: 'r15 32,32 s.85,.85'}, 50, mina.easeout, function() {
+				deferAnimation(group,{transform: 'r0 32,32 s1,1 t1,-1'}, 100, mina.elastic, 500);
+			});
 		});
 	});
 };
