@@ -354,9 +354,23 @@ var initBarChartAnimation = function() {
 	loadSvg('.icon-bar-chart', 64, 'svg/bar-chart.svg', function (fragment, svg, $button) {
 		var group = fragment.select('g');
 		svg.append(group);
+		var firstBar = group.select('#first-bar');
+		var middleBar = group.select('#middle-bar');
+		var lastBar = group.select('#last-bar');
 
 		$button.on(clickEvent, function(e) {
-			console.log("TODO .. animate");
+			var isOpen = $('.icon-bar-chart').data('is-open');
+			$('.icon-bar-chart').data('is-open', !isOpen);
+
+			if (isOpen) {
+				firstBar.stop().animate({path: 'M14,20h8v33h-8V20z'}, 100, mina.easeout);
+				middleBar.stop().animate({path: 'M30.6,5.1h8v47.7h-8V5.1z'}, 150, mina.easeout);
+				lastBar.stop().animate({path: 'M47.2,34h8v19h-8V34z'}, 200, mina.easeout);
+			} else {
+				firstBar.stop().animate({path: 'M14,10h8v43h-8V20z'}, 100, mina.easeout);
+				middleBar.stop().animate({path: 'M30.6,25.1h8v27.7h-8V5.1z'}, 150, mina.easeout);
+				lastBar.stop().animate({path: 'M47.2,14h8v39h-8V34z'}, 200, mina.easeout);
+			}
 		});
 	});
 };
