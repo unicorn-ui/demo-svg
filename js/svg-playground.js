@@ -537,11 +537,31 @@ var initEQAnimation = function() {
 var initMaximizeAnimation = function() {
 	loadSvg('.icon-maximize', 64, 'svg/maximize.svg', function (fragment, svg, $button) {
 		var group = fragment.select('g');
+		var rightUp = group.select('#arrow-right-up');
+		var leftUp = group.select('#arrow-left-up');
+		var rightDown = group.select('#arrow-right-down');
+		var leftDown  = group.select('#arrow-left-down');
 
 		svg.append(group);
+			
 
 		$button.on(clickEvent, function(e) {
-			console.log("TODO .. animate");
+			var duration = 200,
+				isMaximized = $('.icon-maximize').data('is-maximized');
+
+			$('.icon-maximize').data('is-maximized', !isMaximized);
+
+			if (isMaximized) {
+				leftUp.stop().animate({transform: 't0,0'}, duration, mina.easeout);
+				leftDown.stop().animate({transform: 't0,0'}, duration, mina.easeout);
+				rightUp.stop().animate({transform: 't0,0'}, duration, mina.easeout);
+				rightDown.stop().animate({transform: 't0,0'}, duration, mina.easeout);
+			} else {
+				leftUp.stop().animate({transform: 't-4,-4'}, duration, mina.easeout);
+				leftDown.stop().animate({transform: 't-4,4'}, duration, mina.easeout);
+				rightUp.stop().animate({transform: 't2,-4'}, duration, mina.easeout);
+				rightDown.stop().animate({transform: 't4,4'}, duration, mina.easeout);
+			}
 		});
 	});
 };
