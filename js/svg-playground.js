@@ -657,16 +657,35 @@ var initSearchAnimation = function() {
 ** LINK ANIMATION ******************************************************\
 **************************************************************************/
 var initLinkAnimation = function() {
-	loadSvg('.icon-link-connected', 64, 'svg/link-connected.svg', function (fragment, svg, $button) {
-		var group = fragment.select('g');
 
 
-		//TODO ------------- MORPH TO LINK-BROKEN.SVG
+	//EXAMPLE OF CHEAT ALTERNATIVE TO MORPHING WHEN THE SHAPES DON'T HAVE "morphable paths"
+	var svg = Snap(64, 64);
+	Snap.load('svg/link-broken.svg', function(fragment) {
+		var brokenGroup = fragment.select('g');
 
-		svg.append(group);
+		loadSvg('.icon-link-connected', 64, 'svg/link-connected.svg', function (fragment, svg, $button) {
+			var connectedGroup = fragment.select('g');
+			svg.append(connectedGroup);
+			$button.on(clickEvent, function(e) {
 
-		$button.on(clickEvent, function(e) {
-			console.log("TODO .. animate");
+				var isBroken = $('.icon-link-connected').data('is-broken');
+				$('.icon-link-connected').data('is-broken', !isBroken);
+
+				if (isBroken) {
+					brokenGroup.stop().animate({opacity: '0'}, 75, mina.easeout, function () {
+						brokenGroup.remove();
+						svg.add(connectedGroup);
+						connectedGroup.stop().animate({opacity: '1'}, 125, mina.easeout);
+					});
+				} else {
+					connectedGroup.stop().animate({opacity: '0'}, 75, mina.easeout, function() {
+						connectedGroup.remove();
+						svg.add(brokenGroup);
+						brokenGroup.stop().animate({opacity: '1'}, 125, mina.easeout);
+					});
+				}
+			});
 		});
 	});
 };
