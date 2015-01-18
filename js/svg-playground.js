@@ -26,6 +26,13 @@ $(function() {
 		});
 	};
 
+	var sequence = function(el, delay, transforms) {
+		if (!transforms.length) return;
+		el.stop().animate({transform: transforms.shift()}, delay, mina.easing, function() {
+			sequence(el, delay, transforms);
+		});
+	};
+
 	var loadSvg = function(elSelector, size, externalSvgUrl, onSvgLoadedFn) {
 		var $svgEl = $(elSelector);
 		var $button = $svgEl.closest('.button');
@@ -244,37 +251,25 @@ $(function() {
 		});
 	};
 
-
-
-
-
-
-
-
-//
-// TODO
-//
-
-
-
-
-
 /*************************************************************************\
 ** ALARM CLOCK ANIMATION *************************************************\
 **************************************************************************/
 var initAlarmClockAnimation = function() {
 		loadSvg('.icon-alarm-clock', 64, 'svg/alarm-clock.svg', function (fragment, svg, $button) {
 			var clockGroup = fragment.select('#clock');
-			var ringEffectGroup = fragment.select('#ring-effect');
+			// var ringEffectGroup = fragment.select('#ring-effect');
 			svg.append(clockGroup);
-			ringEffectGroup.attr({opacity: 0});
-			svg.append(ringEffectGroup);
+			// ringEffectGroup.attr({opacity: 0});
+			// svg.append(ringEffectGroup);
 
-			var leftBell = clockGroup.select('#bell-left');
-			var rightBell = clockGroup.select('#bell-right');
+			var leftBell = clockGroup.select('#cowbell-left');
+			var rightBell = clockGroup.select('#cowbell-right');
+
+// http://codepen.io/roblevin/pen/gbmzGy
 
 			$button.on(clickEvent, function(e) {
-				console.log("TODO .. animate");
+				sequence(leftBell, 75, ['r10 32,32', 'r-10, 32,32', 'r8 32,32', 'r-8, 32,32', 'r6 32,32', 'r-6, 32,32', 'r5 32,32', 'r0, 32,32']);
+				sequence(rightBell, 75, ['r-10 32,32', 'r10, 32,32', 'r-8 32,32', 'r8, 32,32', 'r-6 32,32', 'r6, 32,32', 'r-5 32,32', 'r0, 32,32']);
 			});
 		});
 	};
