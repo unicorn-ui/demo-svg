@@ -1168,9 +1168,9 @@ var initBugAnimation = function() {
 	initImageAnimation();
 	initRefreshAnimation();
 	initMapMarkerAnimation();
-	initEQAnimation();
 	initMaximizeAnimation();
 	initPinnedAnimation();
+	// initEQAnimation();
 	// initPencilAnimation();
 	// initBorderedArrowLeft();
 	// initBorderedArrowUp();
