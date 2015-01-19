@@ -1150,7 +1150,6 @@ var initBugAnimation = function() {
 	initPlayStopAnimation();
 	initPlusMinusAnimation();
 	initSpeakerAnimation();
-	initEnvelopeAnimation();
 	initAlarmClockAnimation();
 	initUSBAnimation();
 	initQuotesRightAnimation();
@@ -1167,14 +1166,15 @@ var initBugAnimation = function() {
 	initBugAnimation();
 	initFrogAnimation();
 	initImageAnimation();
-	initPencilAnimation();
 	initRefreshAnimation();
-	initBorderedArrowLeft();
-	initBorderedArrowUp();
 	initMapMarkerAnimation();
 	initEQAnimation();
 	initMaximizeAnimation();
 	initPinnedAnimation();
+	// initPencilAnimation();
+	// initBorderedArrowLeft();
+	// initBorderedArrowUp();
+	// initEnvelopeAnimation();
 
 	//Vivus
 	window.vivusPlayground = new Vivus('svg-playground',
