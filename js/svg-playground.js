@@ -644,45 +644,6 @@ var initSearchAnimation = function() {
 	});
 };
 
-
-/*************************************************************************\
-** LINK ANIMATION ******************************************************\
-**************************************************************************/
-var initLinkAnimation = function() {
-
-
-	//EXAMPLE OF CHEAT ALTERNATIVE TO MORPHING WHEN THE SHAPES DON'T HAVE "morphable paths"
-	var svg = Snap(64, 64);
-	Snap.load('svg/link-broken.svg', function(fragment) {
-		var brokenGroup = fragment.select('g');
-
-		loadSvg('.icon-link-connected', 64, 'svg/link-connected.svg', function (fragment, svg, $button) {
-			var connectedGroup = fragment.select('g');
-			svg.append(connectedGroup);
-			$button.on(clickEvent, function(e) {
-
-				var isBroken = $('.icon-link-connected').data('is-broken');
-				$('.icon-link-connected').data('is-broken', !isBroken);
-
-				if (isBroken) {
-					brokenGroup.stop().animate({opacity: '0'}, 75, mina.easeout, function () {
-						brokenGroup.remove();
-						svg.add(connectedGroup);
-						connectedGroup.stop().animate({opacity: '1'}, 125, mina.easeout);
-					});
-				} else {
-					connectedGroup.stop().animate({opacity: '0'}, 75, mina.easeout, function() {
-						connectedGroup.remove();
-						svg.add(brokenGroup);
-						brokenGroup.stop().animate({opacity: '1'}, 125, mina.easeout);
-					});
-				}
-			});
-		});
-	});
-};
-
-
 /*************************************************************************\
 ** PERSON MALE ANIMATION **************************************************\
 **************************************************************************/
@@ -1151,25 +1112,26 @@ var initBugAnimation = function() {
 	initPlusMinusAnimation();
 	initSpeakerAnimation();
 	initAlarmClockAnimation();
-	initUSBAnimation();
+	// initUSBAnimation();
 	initQuotesRightAnimation();
 	initBarChartAnimation();
 	initFaceAnimation();
 	initPlugAnimation();
 	initBellAnimation();
-	initCameraAnimation();
-	initCellAnimation();
+	// initCameraAnimation();
+	// initCellAnimation();
 	initPersonMaleAnimation();
 	initStarAnimation ();
 	initSearchAnimation();
-	initLinkAnimation();
-	initBugAnimation();
+	// initBugAnimation();
 	initFrogAnimation();
 	initImageAnimation();
 	initRefreshAnimation();
 	initMapMarkerAnimation();
 	initMaximizeAnimation();
 	initPinnedAnimation();
+
+
 	// initEQAnimation();
 	// initPencilAnimation();
 	// initBorderedArrowLeft();

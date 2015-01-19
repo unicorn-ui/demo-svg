@@ -31,7 +31,7 @@ p {color: #E4637C;}
 .fa-chevron-left {margin-right: 8px; }
 .fa-chevron-right {margin-left: 8px; }
 
-.level {padding: 1em 1em 2em;}
+.level {padding: 2em 1em 5em;}
 .level-beginner {
   background: #1baee1; /* Old browsers */
 	background: -moz-linear-gradient(-45deg, #1baee1 0%, #1A9ED8 100%); /* FF3.6+ */
@@ -122,8 +122,19 @@ p {color: #E4637C;}
 	margin: 0 auto;
 	text-align: center;
 	max-width: 850px;
-	padding: 2em;
+	padding: 2.5em;
 }
+
+
+/* First row of advanced section has four slightly bigger icon/buttons */
+.icons.big {
+	max-width: 900px;
+}
+.icons.big .button {
+	margin-left: 2.5em;
+	margin-right: 2.5em;
+}
+
 
 .icon {fill: white;}
 
